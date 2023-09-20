@@ -7,3 +7,85 @@
 img{
     max-width: 100%;
 }
+
+/*COMMON*/
+
+
+/*MAIN*/
+.container{
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 100px;
+    /*DEBUG*/
+    border: 5px solid red;
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    /*DEBUG*/
+    border: 3px solid black;
+}
+
+.column{
+    width: calc(100% / 3);
+    /*DEBUG*/
+    min-height: 240px;
+    border: 3px solid greenyellow;
+}
+
+.brand{
+    font-size: 0.9rem;
+}
+
+.clothes{
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.prices{
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+
+.old-price{
+    text-decoration: line-through;
+}
+
+.new-price{
+    color: red;
+}
+
+.img-main{
+    position: relative;
+}
+
+.discount{
+    position: absolute;
+    bottom: 25px;
+    left: 0;
+    font-size: 0.9rem;
+    color: white;
+    background-color: red;
+    padding: 3px 8px;
+}
+
+.type{
+    position: absolute;
+    left: 110%;
+    bottom: 0;
+    font-size: 0.9rem;
+    font-weight: bold;
+    color: white;
+    background-color: green;
+    padding: 3px 8px;
+}
+
+.favourite{
+    position: absolute;
+    right: 0;
+    top: 10px;
+    padding: 5px 10px;
+    background-color: white;
+    font-size: 1.3rem;
+}

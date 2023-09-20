@@ -13,21 +13,70 @@ body{
     font-family: Whitney, "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+/*HEADER*/
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70px;
+    background-color: orange;
+}
+
+.col{
+    width: calc(80% / 3);
+    color: white;
+}
+
+.categories{
+    display: flex;
+}
+
+.categories li{
+    margin-right: 15px;
+}
+
+.logo{
+    text-align: center;
+}
+
+.logo-img{
+    width: 220px;
+}
+
+.actions{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.actions li{
+    margin: 5px;
+}
+
 /*MAIN*/
 .container{
     width: 80%;
     margin: 0 auto;
-    margin-top: 100px;
-    /*DEBUG*/
-    border: 5px solid red;
+    margin-top: 120px;
 }
 
 .row{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    /*DEBUG*/
-    border: 3px solid black;
 }
 
 .column{
@@ -89,7 +138,9 @@ body{
     top: 10px;
     padding: 5px 12px;
     background-color: white;
+    color: black;
     font-size: 1.5rem;
+    border-style: none;
 }
 
 .type-alone{
@@ -101,4 +152,70 @@ body{
     color: white;
     background-color: green;
     padding: 3px 8px;
+}
+
+.img-b{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+/*HOVER*/
+.favourite:hover{
+    color: red;
+}
+
+/*FOOTER*/
+.footer{
+    background-color: black;
+    color: white;
+}
+
+.footer .container{
+    margin-top: 40px;
+    padding: 20px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.name-site{
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.credits ul{
+    display: flex;
+}
+
+.credits li{
+    font-size: 0.9rem;
+    margin-right: 12px;
+}
+
+.social{
+    width: 30%;
+}
+
+.credits{
+    width: 70%;
+}
+
+.address{
+    text-align: right;
+    margin-bottom: 5px;
+}
+
+.social-icons{
+    font-size: 1.2rem;
+}
+
+.social-icons ul{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.social-icons li{
+    margin-left: 10px;
 }

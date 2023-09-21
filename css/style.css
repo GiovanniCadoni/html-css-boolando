@@ -85,6 +85,7 @@ a{
 }
 
 .brand{
+    margin-top: 5px;
     font-size: 1rem;
 }
 
@@ -154,16 +155,26 @@ a{
     padding: 3px 8px;
 }
 
+.img-a{
+    display: block;
+    z-index: -1;
+}
+
 .img-b{
     position: absolute;
     top: 0;
     left: 0;
-    z-index: -1;
+    z-index: -2;
+    display:block;
 }
 
 /*HOVER*/
 .favourite:hover{
     color: red;
+}
+
+.img-main:hover .img-b{
+    z-index:0;
 }
 
 /*FOOTER*/
